@@ -57,7 +57,7 @@ let crearArchivo = () => {
 	found = cursos.find(cursos => cursos.id == argv.id)
 //Si la busqueda es exitosa
 	if (found){
-	texto = 'El aspirante ' + argv.n + '\r\n' + 'con cedula de ciudadania ' + argv.c + '\r\n' + 'se ha inscrito en el curso ' + found.nombre + '\r\n' + 'con una duración de ' + found.duracion + ' horas ' + '\r\n' + 'por un valor de ' + found.valor + ' COP';
+	texto = 'El aspirante ' + argv.n + '<br>' + 'con cedula de ciudadania ' + argv.c + '<br>' + 'se ha inscrito en el curso ' + found.nombre + '<br>' + 'con una duración de ' + found.duracion + ' horas ' + '<br>' + 'por un valor de ' + found.valor + ' COP';
 	return texto;
    }	else if ( argv.id != undefined || argv.id != null) {
 		texto = 'El curso con id ' + argv.id + ' no se encuentra en el listado, a continuación se lista los cursos disponibles <br>';
