@@ -64,7 +64,9 @@ let crearArchivo = () => {
 		texto+= recorrerArreglo(cursos);
 		return texto;
 	} else if ( argv.id == undefined ){
-		return recorrerArreglo(cursos);
+		texto = 'A continuación el listado de cursos disponibles: <br>'
+		texto+= recorrerArreglo(cursos);
+		return texto;
 	}
 };
 
